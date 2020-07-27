@@ -1,0 +1,9 @@
+{
+    "startUrl": "https://alsjohnstone.com",
+    "allowedDomains": ["alsjohnstone.com"],
+    "contentSelector": "h1, h2, p",
+    "accountId": "70159337",
+    "webPropertyId": "UA-70159337-7",
+    "customDataSourceId": "z0hPigyXRvm-x2BCWXv15g",
+    "dataImportSchema": ["ga:pagePath", "ga:dimension1"]
+}
