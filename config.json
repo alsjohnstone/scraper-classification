@@ -1,6 +1,6 @@
 {
-    "startUrl": "https://alsjohnstone.com",
-    "allowedDomains": ["alsjohnstone.com"],
+    "startUrl": "https://www.naturesbest.co.uk/crawler-test/",
+    "allowedDomains": ["www.naturesbest.co.uk"],
     "contentSelector": "h1, h2, p",
     "accountId": "70159337",
     "webPropertyId": "UA-70159337-7",
