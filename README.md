@@ -4,6 +4,6 @@ This script scrapes the content from websites using headless-chrome-crawler, run
 
 ## Set up
 
-1) Update website and CSS selector settings in HCC
-2) Make sure service account is set up with the NLP and Analytics API's enabled in GCP.
-3) Set up Data Import and Custom Dimension for the classification category in Google Analytics.
+1) Update config.json
+2) Make sure service account is set up with the NLP and Analytics API's enabled in GCP
+3) Set up Data Import and Custom Dimension for the classification category in Google Analytics
