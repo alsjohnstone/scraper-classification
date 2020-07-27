@@ -94,5 +94,6 @@ async function returnCategories(result) {
   await crawler.onIdle(); // Resolved when no queue is left
   await crawler.close(); // Close the crawler
   // Upload CSV to GA when crawl is complete
+  console.log("Crawl finished");
   uploadData();
 })();
