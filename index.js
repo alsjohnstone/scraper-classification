@@ -48,7 +48,7 @@ async function uploadData() {
 // Run the page text through classification API
 async function returnCategories(result) {
   try {
-    if (result.result.pagePath.includes("our-blog")) {
+    if (!result.result.pagePath.includes("our-blog")) {
       const language = require("@google-cloud/language");
       const client = new language.LanguageServiceClient({
         projectId: "sentiment-analysis-2020",
@@ -73,14 +73,15 @@ async function returnCategories(result) {
       pageCount++;
     }
   } catch (error) {
-    console.log("No categories for this page");
-    console.error(error);
+    console.log(pageCount + ") Page Path: " + result.result.pagePath);
+    console.log("   Category: NA");
+    pageCount++;
   }
 }
 
 (async () => {
   const crawler = await HCCrawler.launch({
-    args: ["--no-sandbox"],
+    //args: ["--no-sandbox"],
     maxDepth: 9999,
     allowedDomains: config.allowedDomains, // www.naturesbest.co.uk
     // Function to be evaluated in browsers

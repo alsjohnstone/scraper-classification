@@ -16,6 +16,9 @@ git clone https://github.com/alsjohnstone/scraper-classification.git
 
 cd scraper-classification
 sudo npm install
+sudo npm install headless-chrome-crawler
+sudo npm install googleapis
+sudo npm install @google-cloud/language
 gsutil cp ${config} .
 gsutil cp ${credentials} .
 node index.js
