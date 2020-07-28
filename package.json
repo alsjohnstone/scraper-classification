@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "googleapis": "^55.0.0",
-    "headless-chrome-crawler": "^1.8.0",
-    "my-dependency": "^1.0.1"
+    "headless-chrome-crawler": "^1.8.0"
   }
 }
