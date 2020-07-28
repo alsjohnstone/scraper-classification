@@ -1,3 +1,9 @@
+/*
+to do
+- add config.json to gcp bucket
+- shell script for startup
+*/
+
 const HCCrawler = require("headless-chrome-crawler");
 const { google } = require("googleapis");
 const scopes = "https://www.googleapis.com/auth/analytics";
@@ -74,6 +80,7 @@ async function returnCategories(result) {
 
 (async () => {
   const crawler = await HCCrawler.launch({
+    args: ["--no-sandbox"],
     maxDepth: 9999,
     allowedDomains: config.allowedDomains, // www.naturesbest.co.uk
     // Function to be evaluated in browsers
