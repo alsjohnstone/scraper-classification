@@ -1,0 +1,16 @@
+{
+  "name": "scraper-classification",
+  "version": "1.0.0",
+  "description": "Scrapes text content from websites, runs them through Google's NLP API for category and then uploads results to Google Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alistair",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^55.0.0",
+    "headless-chrome-crawler": "^1.8.0",
+    "my-dependency": "^1.0.1"
+  }
+}
