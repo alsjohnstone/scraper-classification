@@ -4,6 +4,6 @@
     "contentSelector": "h1, h2, p",
     "accountId": "70159337",
     "webPropertyId": "UA-70159337-7",
-    "customDataSourceId": "z0hPigyXRvm-x2BCWXv15g",
-    "dataImportSchema": ["ga:pagePath", "ga:dimension1"]
+    "customDataSourceId": "_5wwyp7kSKG6hBZYdVz1wg",
+    "dataImportSchema": ["ga:pagePath", "ga:dimension1", "ga:dimension2", "ga:dimension3"]
 }
