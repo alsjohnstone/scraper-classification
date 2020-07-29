@@ -1,4 +1,4 @@
-# Content Classification for GA
+# ML Content Classification for GA
 
 This app scrapes the content from websites using headless-chrome-crawler, runs the content through Google's pre-trained content classification model and then uploads the results to Google Analytics using the Management API.
 
