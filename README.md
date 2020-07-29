@@ -8,7 +8,7 @@ This app scrapes the content from websites using headless-chrome-crawler, runs t
 3) Clone this repo `git clone https://github.com/alsjohnstone/scraper-classification.git`
 4) Create a GCP project, enable NLP API and Analytics API
 5) Create service worker account and download the credentials.json file
-6) update the config.json file
+6) Update the config.json file
 7) Create a new GCP storage bucket and add your config.json and credentials.json files
 8) Update the bucket referenced in the install.sh file with your bucket
 9) Run the command below to spin up a new GCP Compute Instance that will automatically shutdown after the crawl is complete.
