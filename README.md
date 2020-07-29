@@ -1,6 +1,6 @@
 # Content Classification for GA
 
-This app scrapes the content from websites using headless-chrome-crawler, runs the content through Google's Content Classification API and then imports the results to Google Analytics using the Management API.
+This app scrapes the content from websites using headless-chrome-crawler, runs the content through Google's pre-trained content classification model and then uploads the results to Google Analytics using the Management API.
 
 ## Set up
 1) Create three custom dimensions in GA for `Primary Category`, `Subcategory` and `Secondary Subcategory`
