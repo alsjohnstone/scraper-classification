@@ -68,11 +68,11 @@ const returnCategories = async (result) => {
         classification.categories[0].name.split("/")[2],
         classification.categories[0].name.split("/")[3],
       ]);
-      console.log(pageCount + ") Page Path: " + result.result.pagePath);
-      console.log("   Category: " + classification.categories[0].name);
+      console.log(`${pageCount}) Page Path: ${result.result.pagePath}`);
+      console.log(`   Category: ${classification.categories[0].name}`);
     }
   } catch (error) {
-    console.log("!!" + " Page Path: " + result.result.pagePath);
+    console.log(`!! Page Path: ${result.result.pagePath}`);
     console.log("   NO CATEGORY FOUND");
   }
 };
@@ -82,7 +82,7 @@ const returnCategories = async (result) => {
     args: ["--no-sandbox"],
     maxConcurrency: 50,
     maxDepth: 9999999,
-    allowedDomains: config.allowedDomains, // www.naturesbest.co.uk
+    allowedDomains: config.allowedDomains,
     // Function to be evaluated in browsers
     evaluatePage: () => ({
       pagePath: window.location.pathname,
