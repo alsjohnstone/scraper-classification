@@ -45,7 +45,7 @@ const uploadData = async () => {
 const returnCategories = async (result) => {
   pagesCrawled++;
   try {
-    if (!result.result.pagePath.includes("our-blog")) {
+    if (result.result.pagePath.includes("our-blog")) {
       const language = require("@google-cloud/language");
       const client = new language.LanguageServiceClient({
         projectId: "sentiment-analysis-2020",
